@@ -1,0 +1,23 @@
+{
+  "name": "twit_100",
+  "version": "1.0.0",
+  "description": "Don't pay $100 for Elon Musk's bullshit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h3llo-wor1d/twit_100.git"
+  },
+  "author": "Wrench",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h3llo-wor1d/twit_100/issues"
+  },
+  "homepage": "https://github.com/h3llo-wor1d/twit_100#readme",
+  "dependencies": {
+    "request": "^2.88.2",
+    "tough-cookie-filestore": "^0.0.1"
+  }
+}
