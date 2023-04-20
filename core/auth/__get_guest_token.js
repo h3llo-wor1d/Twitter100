@@ -5,8 +5,8 @@ module.exports = async () => {
             "authorization": global.client.authorization,
             "User-Agent": global.client.user_agent,
         }}, (error, response, body) => {
-            if (!error) {          
-                resolve(body.guest_token);
+            if (!error) {       
+                resolve(JSON.parse(response.toJSON().body).guest_token);
             } 
             reject();
         })

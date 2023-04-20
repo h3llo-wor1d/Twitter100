@@ -24,6 +24,7 @@ module.exports = async (user_id) => {
             json: true
         }, (error, response, body) => {
             if (!error) {
+                body = JSON.parse(body);
                 global.client.flow_token = body.flow_token;
                 global.client.subtasks = body.subtasks;
                 resolve();

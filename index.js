@@ -20,6 +20,7 @@ module.exports = class Twitter {
         await this.__twitter();
         this.x_guest_token = await this.__get_guest_token();
         console.log(this.x_guest_token);
+        console.log("may have failed to get x_guest_token...")
     }
 
     __twitter = async () => {
@@ -74,4 +75,8 @@ module.exports = class Twitter {
     LikeTweet = require('./core/actions/LikeTweet');
 
     UnlikeTweet = require('./core/actions/UnlikeTweet');
+
+    FetchNotifs = require('./core/data/FetchNotifs');
+
+    GetTweetDetails = require('./core/actions/GetTweetDetails');
 }   
